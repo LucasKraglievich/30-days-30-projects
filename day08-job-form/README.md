@@ -2,9 +2,6 @@
 
 Formulario con validación en tiempo real y feedback visual instantáneo.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day08-job-form)
-
 ## ✨ Features
 - Validación mientras escribís, no solo al enviar
 - Regex para email y URL de LinkedIn

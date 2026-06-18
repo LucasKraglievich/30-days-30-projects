@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 24px 16px 60px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #f59e0b;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Search */
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 10px;
+  color: #f1f5f9;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-box input:focus {
+  border-color: #f59e0b;
+}
+
+.search-box input::placeholder {
+  color: #475569;
+}
+
+/* Mensaje */
+.mensaje {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Tabla de cryptos */
+.crypto-tabla {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.crypto-fila {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 32px 36px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.2s;
+}
+
+.crypto-fila:hover {
+  border-color: #f59e0b;
+}
+
+.crypto-rank {
+  font-size: 12px;
+  color: #475569;
+  text-align: center;
+}
+
+.crypto-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.crypto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.crypto-nombre {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f1f5f9;
+}
+
+.crypto-simbolo {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.crypto-precios {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.crypto-precio {
+  font-size: 15px;
+  font-weight: bold;
+  color: #f1f5f9;
+}
+
+.crypto-cambio {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.positivo {
+  color: #4ade80;
+}
+
+.negativo {
+  color: #f87171;
+}
+
+/* Hora de actualización */
+.update-time {
+  text-align: center;
+  font-size: 12px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #334155;
+}
+
+footer span {
+  color: #f59e0b;
+  font-weight: bold;
+}

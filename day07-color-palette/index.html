@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Color 🎨</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="fondo" class="fondo">
+
+    <div class="container">
+
+      <h1 id="titulo"> Generador de Color</h1>
+      <p id="subtitulo" class="subtitulo">Presioná el botón o la barra espaciadora</p>
+
+      <!-- Color actual -->
+      <div class="color-info">
+        <p id="hex" class="hex">#000000</p>
+        <p id="rgb" class="rgb">RGB(0, 0, 0)</p>
+      </div>
+
+      <!-- Botones -->
+      <div class="botones">
+        <button id="btn-generar" onclick="generarColor()">⚡ Color aleatorio</button>
+        <button id="btn-copiar" onclick="copiarHex()">📋 Copiar HEX</button>
+      </div>
+
+      <p id="mensaje" class="mensaje" style="display:none">✅ ¡Copiado!</p>
+
+      <footer>
+        <p>Día 7 / 30 · Challenge de proyectos · <span id="usuario">@lucaskraglievich</span></p>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

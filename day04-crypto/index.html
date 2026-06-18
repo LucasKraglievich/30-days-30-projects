@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Tracker 📈</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>📈 Crypto Tracker</h1>
+      <p class="subtitle">Top 20 criptomonedas en tiempo real</p>
+    </div>
+
+    <!-- Buscador -->
+    <div class="search-box">
+      <input
+        type="text"
+        id="input-busqueda"
+        placeholder="Buscá una cripto: Bitcoin, Ethereum..."
+        oninput="filtrar()"
+      />
+    </div>
+
+    <!-- Estado -->
+    <p id="mensaje" class="mensaje">Cargando datos... ⏳</p>
+
+    <!-- Tabla -->
+    <div id="resultados"></div>
+
+    <p id="update-time" class="update-time"></p>
+
+    <footer>
+      <p>Día 4 / 30 · Challenge de proyectos · <span>@lucaskraglievich</span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

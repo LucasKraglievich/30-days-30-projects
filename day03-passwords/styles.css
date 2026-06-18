@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #12001f;
+  color: #f0f0f0;
+  padding: 24px 16px 60px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #c084fc;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #7a5a9a;
+}
+
+/* Caja resultado */
+.resultado-box {
+  background-color: #1e0a33;
+  border: 2px solid #6b21a8;
+  border-radius: 12px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+#password {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c084fc;
+  flex: 1;
+  letter-spacing: 0.05em;
+  font-family: monospace;
+}
+
+#btn-copiar {
+  background-color: #6b21a8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+#btn-copiar:hover {
+  background-color: #7c3aed;
+}
+
+/* Mensaje copiado */
+.mensaje {
+  text-align: center;
+  color: #4ade80;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Barra de seguridad */
+.seguridad-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.seguridad-label {
+  font-size: 13px;
+  color: #7a5a9a;
+  white-space: nowrap;
+}
+
+#seguridad-texto {
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 50px;
+}
+
+.barra-fondo {
+  flex: 1;
+  height: 8px;
+  background-color: #1e0a33;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+  border-radius: 4px;
+  width: 0%;
+  transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Opciones */
+.opciones {
+  background-color: #1e0a33;
+  border: 1px solid #3b0764;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.opcion-longitud label {
+  font-size: 14px;
+  color: #d0b0f0;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #c084fc;
+  cursor: pointer;
+}
+
+/* Checkboxes */
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #d0b0f0;
+  cursor: pointer;
+}
+
+.check-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #c084fc;
+  cursor: pointer;
+}
+
+/* Botón generar */
+#btn-generar {
+  width: 100%;
+  padding: 14px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-generar:hover {
+  background-color: #9333ea;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #4a2a6a;
+}
+
+footer span {
+  color: #c084fc;
+  font-weight: bold;
+}

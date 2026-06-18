@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Postulación 📋</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>📋 Postulación Laboral</h1>
+      <p class="subtitle">Validación en tiempo real con feedback visual</p>
+    </div>
+
+    <form id="formulario" onsubmit="enviarFormulario(event)">
+
+      <!-- Nombre -->
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" oninput="validarNombre()" placeholder="Ingresá tu nombre completo" />
+        <p class="error" id="error-nombre"></p>
+      </div>
+
+      <!-- Email -->
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="text" id="email" oninput="validarEmail()" placeholder="tu@email.com" />
+        <p class="error" id="error-email"></p>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="campo">
+        <label for="linkedin">URL de LinkedIn</label>
+        <input type="text" id="linkedin" oninput="validarLinkedin()" placeholder="https://linkedin.com/in/tu-perfil" />
+        <p class="error" id="error-linkedin"></p>
+      </div>
+
+      <!-- Años de experiencia -->
+      <div class="campo">
+        <label for="experiencia">Años de experiencia</label>
+        <input type="text" id="experiencia" oninput="validarExperiencia()" placeholder="Ej: 2" />
+        <p class="error" id="error-experiencia"></p>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" id="btn-enviar" disabled>Enviar postulación</button>
+
+    </form>
+
+    <!-- Mensaje de éxito -->
+    <div id="mensaje-exito" class="mensaje-exito" style="display:none">
+      ✅ ¡Postulación enviada con éxito!
+    </div>
+
+    <footer>
+      <p>Día 8 / 30 · Challenge de proyectos · <span>@lucaskraglievich</span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

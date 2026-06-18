@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #0a0e0a;
+  background-image:
+    linear-gradient(rgba(0,255,140,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,140,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #c9ffe5;
+  padding: 40px 16px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ff8c;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 12px rgba(0,255,140,0.4);
+}
+
+h1::before {
+  content: "> ";
+  color: #38bdf8;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #4a7a63;
+}
+
+/* Form */
+form {
+  background-color: #0f1410;
+  border: 1px solid #1a3326;
+  border-radius: 10px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 0 30px rgba(0,255,140,0.06);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+label::before {
+  content: "$ ";
+  color: #4a7a63;
+}
+
+input {
+  padding: 12px 14px;
+  background-color: #060906;
+  border: 1px solid #1a3326;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color: #c9ffe5;
+  font-family: 'Courier New', monospace;
+}
+
+input::placeholder {
+  color: #2d4a3a;
+}
+
+input:focus {
+  border-color: #00ff8c;
+  box-shadow: 0 0 8px rgba(0,255,140,0.25);
+}
+
+/* Estados de validación */
+input.valido {
+  border-color: #00ff8c;
+  box-shadow: 0 0 8px rgba(0,255,140,0.2);
+}
+
+input.invalido {
+  border-color: #ff4757;
+  box-shadow: 0 0 8px rgba(255,71,87,0.2);
+}
+
+/* Mensaje de error */
+.error {
+  font-size: 12px;
+  color: #ff6b7a;
+  min-height: 14px;
+  font-family: 'Courier New', monospace;
+}
+
+.error:not(:empty)::before {
+  content: "✗ ";
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00ff8c;
+  color: #0a0e0a;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  margin-top: 4px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.5px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #38ffa8;
+  box-shadow: 0 0 16px rgba(0,255,140,0.4);
+}
+
+button:disabled {
+  background-color: #1a3326;
+  color: #4a7a63;
+  cursor: not-allowed;
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+  background-color: #0f1410;
+  border: 1px solid #00ff8c;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  color: #00ff8c;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 16px;
+  box-shadow: 0 0 20px rgba(0,255,140,0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #2d4a3a;
+  margin-top: 28px;
+}
+
+footer span {
+  color: #38bdf8;
+  font-weight: bold;
+}

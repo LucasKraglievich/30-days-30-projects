@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Contraseñas 🔐</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>🔐 Generador de Contraseñas</h1>
+      <p class="subtitle">Seguridad criptográfica en el browser</p>
+    </div>
+
+    <!-- Resultado -->
+    <div class="resultado-box">
+      <span id="password">Presioná Generar</span>
+      <button id="btn-copiar" onclick="copiarPassword()">📋 Copiar</button>
+    </div>
+
+    <!-- Mensaje copiado -->
+    <p id="mensaje" class="mensaje" style="display:none">✅ ¡Copiado al portapapeles!</p>
+
+    <!-- Barra de seguridad -->
+    <div class="seguridad-box">
+      <span class="seguridad-label">Seguridad:</span>
+      <span id="seguridad-texto">—</span>
+      <div class="barra-fondo">
+        <div id="barra" class="barra"></div>
+      </div>
+    </div>
+
+    <!-- Opciones -->
+    <div class="opciones">
+
+      <div class="opcion-longitud">
+        <label>Longitud: <strong id="longitud-valor">12</strong> caracteres</label>
+        <input type="range" id="longitud" min="6" max="32" value="12" oninput="actualizarLongitud()" />
+      </div>
+
+      <div class="checkboxes">
+        <label class="check-item">
+          <input type="checkbox" id="mayusculas" checked />
+          Mayúsculas (A-Z)
+        </label>
+        <label class="check-item">
+          <input type="checkbox" id="numeros" checked />
+          Números (0-9)
+        </label>
+        <label class="check-item">
+          <input type="checkbox" id="simbolos" />
+          Símbolos (!@#$%&*)
+        </label>
+      </div>
+
+    </div>
+
+    <!-- Botón principal -->
+    <button id="btn-generar" onclick="generarPassword()">⚡ Generar contraseña</button>
+
+    <footer>
+      <p>Día 3 / 30 · Challenge de proyectos · <span>@lucaskraglievich</span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

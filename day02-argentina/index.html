@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prode Argentina · Mundial 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="escudo">🇦🇷</div>
+      <h1>Argentina · Mundial 2026</h1>
+      <p class="subtitle">Grupo J · Predecí los resultados</p>
+    </div>
+
+    <!-- Partidos -->
+    <div id="partidos"></div>
+
+    <!-- Botón guardar -->
+    <button id="btn-guardar" onclick="guardarPredicciones()">
+      💾 Guardar mis predicciones
+    </button>
+
+    <!-- Mensaje confirmación -->
+    <div id="mensaje" class="mensaje" style="display:none">
+      ✅ ¡Predicciones guardadas!
+    </div>
+
+    <!-- Resumen -->
+    <div id="resumen" style="display:none">
+      <h2>📋 Mis predicciones</h2>
+      <div id="lista-resumen"></div>
+      <button id="btn-limpiar" onclick="limpiarPredicciones()">🗑 Borrar todo</button>
+    </div>
+
+    <footer>
+      <p>Día 2 / 30 · Challenge de proyectos · <span>@lucaskraglievich</span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

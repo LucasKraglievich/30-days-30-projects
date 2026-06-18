@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Rutina 💪</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>💪 Generador de Rutina</h1>
+      <p class="subtitle">Seleccioná músculo y nivel para generar tu rutina</p>
+    </div>
+
+    <!-- Selector de músculo -->
+    <div class="seccion">
+      <p class="seccion-label">Grupo muscular</p>
+      <div class="opciones-grid" id="musculos">
+        <button class="opcion-btn activo" onclick="seleccionarMusculo('pecho', this)">🫁 Pecho</button>
+        <button class="opcion-btn" onclick="seleccionarMusculo('espalda', this)">🔙 Espalda</button>
+        <button class="opcion-btn" onclick="seleccionarMusculo('piernas', this)">🦵 Piernas</button>
+        <button class="opcion-btn" onclick="seleccionarMusculo('hombros', this)">🏋️ Hombros</button>
+        <button class="opcion-btn" onclick="seleccionarMusculo('biceps', this)">💪 Bíceps</button>
+        <button class="opcion-btn" onclick="seleccionarMusculo('triceps', this)">💪 Tríceps</button>
+      </div>
+    </div>
+
+    <!-- Selector de nivel -->
+    <div class="seccion">
+      <p class="seccion-label">Nivel</p>
+      <div class="opciones-grid tres-col" id="niveles">
+        <button class="opcion-btn activo" onclick="seleccionarNivel('principiante', this)">🟢 Principiante</button>
+        <button class="opcion-btn" onclick="seleccionarNivel('intermedio', this)">🟡 Intermedio</button>
+        <button class="opcion-btn" onclick="seleccionarNivel('avanzado', this)">🔴 Avanzado</button>
+      </div>
+    </div>
+
+    <!-- Botón generar -->
+    <button id="btn-generar" onclick="generarRutina()">⚡ Generar rutina</button>
+
+    <!-- Resultado -->
+    <div id="resultado" style="display:none">
+      <div class="resultado-header">
+        <h2 id="resultado-titulo"></h2>
+        <button id="btn-copiar" onclick="copiarRutina()">📋 Copiar</button>
+      </div>
+      <div id="ejercicios"></div>
+      <p id="mensaje-copiado" class="mensaje-copiado" style="display:none">✅ ¡Rutina copiada!</p>
+    </div>
+
+    <footer>
+      <p>Día 6 / 30 · Challenge de proyectos · <span>@lucaskraglievich</span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

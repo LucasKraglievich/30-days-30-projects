@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zonas Horarias 🌐</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Zonas Horarias</h1>
+      <p class="subtitle">Trabajo remoto · 12 ciudades del mundo</p>
+    </div>
+
+    <!-- Input manual -->
+    <div class="input-box">
+      <div class="campo">
+        <label for="hora">Hora <span class="hint">(formato 14:30)</span></label>
+        <input type="text" id="hora" placeholder="14:30" maxlength="5" oninput="formatearHora()" />
+        <p class="error" id="error-hora"></p>
+      </div>
+      <div class="campo">
+        <label for="zona-origen">Ciudad de origen</label>
+        <select id="zona-origen" onchange="convertir()"></select>
+      </div>
+    </div>
+
+    <button onclick="convertir()">Convertir</button>
+
+    <!-- Resultados -->
+    <div id="resultados" class="resultados"></div>
+
+    <footer>
+      <p>Día 9 / 30 · Challenge de proyectos · <span>@lucaskraglievich</span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

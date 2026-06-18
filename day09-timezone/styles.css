@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 40px 16px 60px;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -1.5px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* Input box */
+.input-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hint {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+input[type="text"],
+select {
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #0f172a;
+}
+
+input[type="text"]::placeholder {
+  color: #cbd5e1;
+  font-weight: 400;
+}
+
+select {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 12px;
+  color: #ef4444;
+  min-height: 14px;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
+}
+
+button:hover {
+  background-color: #1e293b;
+}
+
+/* Resultados */
+.resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ciudad-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #f1f5f9;
+  gap: 12px;
+}
+
+.ciudad-card.origen {
+  border-bottom: 1px solid #0f172a;
+}
+
+.ciudad-izq {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ciudad-bandera {
+  font-size: 24px;
+}
+
+.ciudad-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ciudad-nombre {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ciudad-zona {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.ciudad-hora {
+  font-size: 28px;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -1px;
+  font-family: Arial, sans-serif;
+}
+
+.ciudad-card.origen .ciudad-hora {
+  color: #0f172a;
+}
+
+.origen-badge {
+  font-size: 9px;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-left: 6px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #e2e8f0;
+  margin-top: 32px;
+}
+
+footer span {
+  color: #94a3b8;
+  font-weight: bold;
+}

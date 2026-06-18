@@ -2,9 +2,6 @@
 
 Predecí los resultados de Argentina en la fase de grupos del Mundial 2026.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day02-world-cup-predictor)
-
 ## ✨ Features
 - Predicciones para los 3 partidos de grupo de Argentina
 - Persistencia con LocalStorage — tus predicciones quedan guardadas al recargar

@@ -2,9 +2,6 @@
 
 Top 20 criptomonedas en tiempo real con precios y variación en 24hs.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day04-crypto)
-
 ## ✨ Features
 - Top 20 por capitalización de mercado
 - Variación 24hs en verde/rojo

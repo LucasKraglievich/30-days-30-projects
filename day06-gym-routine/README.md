@@ -2,9 +2,6 @@
 
 Generá tu rutina al instante según grupo muscular y nivel.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day06-gym-routine)
-
 ## ✨ Features
 - 6 grupos musculares: pecho, espalda, piernas, hombros, bíceps, tríceps
 - 3 niveles: principiante, intermedio, avanzado

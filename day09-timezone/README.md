@@ -2,9 +2,6 @@
 
 Convertí cualquier hora a 12 ciudades del mundo al instante.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day09-timezone)
-
 ## ✨ Features
 - 12 ciudades principales del mundo
 - Muestra hora actual por defecto

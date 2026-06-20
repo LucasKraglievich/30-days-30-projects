@@ -2,9 +2,6 @@
 
 Generá contraseñas seguras al instante con opciones personalizables.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day03-passwords)
-
 ## ✨ Features
 - Longitud configurable de 6 a 32 caracteres
 - Activá mayúsculas, números y símbolos

@@ -2,9 +2,6 @@
 
 Generá paletas de 5 colores al instante. Bloqueá los que te gustan y regenerá el resto.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day07-color-palette)
-
 ## ✨ Features
 - Paleta de 5 colores aleatorios
 - Hover para ver el HEX y las acciones

@@ -2,9 +2,6 @@
 
 Quiz interactivo sobre la Final NBA 2026 y la historia de la liga.
 
-## 🚀 Demo
-[Ver en vivo](https://lucaskraglievich.github.io/day05-nba-trivia)
-
 ## ✨ Features
 - 10 preguntas sobre la Final 2026 (Spurs vs Knicks) e historia NBA
 - Timer de 15 segundos por pregunta con barra animada

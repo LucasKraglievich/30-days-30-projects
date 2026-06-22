@@ -4,7 +4,7 @@ API REST de tareas con persistencia real en base de datos SQLite.
 
 ## ✨ Features
 - CRUD completo (GET, POST, PUT, DELETE)
-- Persistencia real — los datos sobreviven al reinicio del servidor
+- Persistencia real los datos sobreviven al reinicio del servidor
 - Base de datos en un solo archivo (`tareas.db`), sin servidor externo
 - Prepared statements para prevenir SQL injection
 

@@ -1,4 +1,4 @@
-# Autenticación con JWT 🔐
+# Autenticación con JWT 
 
 API con registro, login y rutas protegidas usando JSON Web Tokens.
 
@@ -9,10 +9,10 @@ API con registro, login y rutas protegidas usando JSON Web Tokens.
 - Middleware de autenticación para proteger rutas
 - Token con expiración de 1 hora
 
-## 🛠 Stack
+## Stack
 Node.js · Express · bcrypt · jsonwebtoken
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta              | Descripción                                  | Requiere token |
 |--------|-------------------|-----------------------------------------------|----------------|
@@ -20,7 +20,7 @@ Node.js · Express · bcrypt · jsonwebtoken
 | POST   | `/api/login`      | Login, devuelve un JWT                        | No             |
 | GET    | `/api/perfil`     | Ruta protegida, devuelve datos del usuario     | Sí             |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **bcrypt** — hashea contraseñas de forma irreversible. Nunca se guarda la contraseña en texto plano; solo se puede comparar, no "deshacer" el hash.
 
@@ -28,7 +28,7 @@ Node.js · Express · bcrypt · jsonwebtoken
 
 **Middleware de autenticación** — función que se ejecuta antes de la ruta protegida, revisa el header `Authorization: Bearer <token>`, valida el JWT, y solo deja pasar (`next()`) si es válido.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 ```bash
 npm install

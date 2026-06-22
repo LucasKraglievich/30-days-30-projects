@@ -22,6 +22,8 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 08 | [Formulario de Postulación](./day08-job-form) | JS · Regex |
 | 09 | [Conversor de Zonas Horarias](./day09-timezone) | JS · Intl API |
 | 10 | [REST API de Tareas](./day10-rest-api) | Node.js · Express |
+| 11 | [Autenticación JWT](./day11-jwt-auth) | Node.js · bcrypt · JWT |
+| 12 | [CRUD con SQLite](./day12-sqlite-crud) | Node.js · SQLite |
 
 *(se va actualizando a medida que avanza el challenge)*
 

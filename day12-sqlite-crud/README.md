@@ -1,4 +1,4 @@
-# CRUD con SQLite 🗄️
+# CRUD con SQLite 
 
 API REST de tareas con persistencia real en base de datos SQLite.
 
@@ -8,10 +8,10 @@ API REST de tareas con persistencia real en base de datos SQLite.
 - Base de datos en un solo archivo (`tareas.db`), sin servidor externo
 - Prepared statements para prevenir SQL injection
 
-## 🛠 Stack
+## Stack
 Node.js · Express · better-sqlite3
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta              | Descripción                          |
 |--------|-------------------|----------------------------------------|
@@ -20,7 +20,7 @@ Node.js · Express · better-sqlite3
 | PUT    | `/api/tareas/:id` | Actualiza una tarea                   |
 | DELETE | `/api/tareas/:id` | Elimina una tarea                     |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **Persistencia vs memoria** — a diferencia del día 10 (array en memoria), acá los datos viven en un archivo `.db` en disco. Si el servidor se reinicia, los datos siguen ahí.
 
@@ -28,7 +28,7 @@ Node.js · Express · better-sqlite3
 
 **Prepared statements** — el uso de `?` como placeholder en las queries previene SQL injection, evitando que un input malicioso modifique la consulta SQL real.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 ```bash
 npm install

@@ -9,10 +9,10 @@ Control de acceso basado en roles (admin/user) sobre autenticación JWT.
 - Middleware de verificación de rol (reutilizable para cualquier rol)
 - Ruta exclusiva para administradores
 
-## 🛠 Stack
+## Stack
 Node.js · Express · bcrypt · jsonwebtoken
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta                    | Descripción                              | Requiere      |
 |--------|-------------------------|-------------------------------------------|---------------|
@@ -21,7 +21,7 @@ Node.js · Express · bcrypt · jsonwebtoken
 | GET    | `/api/perfil`           | Perfil del usuario logueado               | Token válido  |
 | GET    | `/api/admin/usuarios`   | Lista todos los usuarios                  | Token + rol admin |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **RBAC (Role-Based Access Control)** — patrón de seguridad estándar: no solo autenticás "quién es" el usuario, sino que autorizás "qué puede hacer" según su rol.
 
@@ -29,7 +29,7 @@ Node.js · Express · bcrypt · jsonwebtoken
 
 **Función que devuelve función** — `verificarRol(rolRequerido)` genera un middleware personalizado según el rol que se necesite, evitando repetir código para cada rol distinto.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 ```bash
 npm install

@@ -8,17 +8,17 @@ API protegida contra exceso de peticiones, con logging automático de requests.
 - Logs automáticos de cada request (método, ruta, status, tiempo)
 - Rate limiting aplicado selectivamente, no a toda la app
 
-## 🛠 Stack
+## Stack
 Node.js · Express · express-rate-limit · morgan
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta         | Descripción                          | Rate limit |
 |--------|--------------|----------------------------------------|------------|
 | GET    | `/`          | Ruta sin límite                        | No         |
 | GET    | `/api/test`  | Ruta de prueba con límite              | Sí (5/min) |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **Rate limiting** — protege el servidor de bots, ataques DDoS, o usuarios que por error mandan demasiadas peticiones. Status `429 Too Many Requests` es el código HTTP estándar para esto.
 
@@ -26,7 +26,7 @@ Node.js · Express · express-rate-limit · morgan
 
 **Aplicación selectiva de middleware** — `app.use('/api/', limiter)` aplica el límite solo a rutas que empiecen con `/api/`, dejando otras rutas libres.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 ```bash
 npm install

@@ -9,16 +9,16 @@ API para subir imágenes con validación de tipo y tamaño usando Multer.
 - Nombres únicos con timestamp para evitar colisiones
 - Manejo de errores específico de Multer
 
-## 🛠 Stack
+## Stack
 Node.js · Express · Multer
 
-## 📌 Endpoint
+## Endpoint
 
 | Método | Ruta          | Descripción                                    |
 |--------|---------------|--------------------------------------------------|
 | POST   | `/api/upload` | Sube una imagen (form-data, campo `imagen`)     |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **multipart/form-data** — formato especial para enviar archivos en una petición HTTP, distinto al JSON usado en rutas anteriores.
 
@@ -30,7 +30,7 @@ Node.js · Express · Multer
 
 **Módulos nativos de Node.js** — `path` y `fs` para manejo de rutas y carpetas, sin necesidad de instalar librerías externas.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 ```bash
 npm install

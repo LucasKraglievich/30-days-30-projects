@@ -25,6 +25,8 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 11 | [Autenticación JWT](./day11-jwt-auth) | Node.js · bcrypt · JWT |
 | 12 | [CRUD con SQLite](./day12-sqlite-crud) | Node.js · SQLite |
 | 13 | [RBAC por Roles](./day13-rbac) | Node.js · JWT · RBAC |
+| 14 | [Upload de Archivos](./day14-file-upload) | Node.js · Multer |
+| 15 | [Rate Limiting + Logs](./day15-rate-limit-logs) | Node.js · express-rate-limit · morgan |
 
 *(se va actualizando a medida que avanza el challenge)*
 

@@ -1,0 +1,21 @@
+{
+  "name": "day17-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+  "migrate:up": "node-pg-migrate up",
+  "migrate:down": "node-pg-migrate down",
+  "start": "node server.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "node-pg-migrate": "^8.0.4",
+    "pg": "^8.22.0"
+  }
+}

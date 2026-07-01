@@ -8,10 +8,10 @@ API REST de tareas conectada a PostgreSQL — base de datos de producción real.
 - Tipos de datos reales: BOOLEAN, SERIAL, TEXT
 - Prepared statements con `$1`, `$2` para prevenir SQL injection
 
-## 🛠 Stack
+## Stack
 Node.js · Express · PostgreSQL · node-postgres (pg)
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta              | Descripción                          |
 |--------|-------------------|----------------------------------------|
@@ -20,7 +20,7 @@ Node.js · Express · PostgreSQL · node-postgres (pg)
 | PUT    | `/api/tareas/:id` | Actualiza una tarea                   |
 | DELETE | `/api/tareas/:id` | Elimina una tarea                     |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **Pool de conexiones** — maneja múltiples conexiones simultáneas eficientemente. A diferencia de una conexión directa, el Pool reutiliza conexiones existentes en vez de abrir una nueva por cada request.
 
@@ -28,7 +28,7 @@ Node.js · Express · PostgreSQL · node-postgres (pg)
 
 **RETURNING \*** — cláusula de PostgreSQL que devuelve la fila insertada/actualizada, evitando hacer un SELECT adicional.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 Requiere PostgreSQL instalado y corriendo. Crear base de datos `tareas_db` antes de iniciar.
 

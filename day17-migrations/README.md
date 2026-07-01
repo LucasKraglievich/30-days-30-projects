@@ -8,17 +8,17 @@ Sistema de migraciones versionadas para PostgreSQL con node-pg-migrate.
 - Reversión de cambios con `migrate:down`
 - Ejemplo real: crear tabla y agregar columna en migraciones separadas
 
-## 🛠 Stack
+## Stack
 Node.js · PostgreSQL · node-pg-migrate · dotenv
 
-## 📌 Migraciones incluidas
+## Migraciones incluidas
 
 | # | Archivo | Descripción |
 |---|---------|-------------|
 | 1 | `1_crear_tabla_tareas.js` | Crea la tabla `tareas` con id, titulo, completada, creado_en |
 | 2 | `2_agregar_descripcion.js` | Agrega la columna `descripcion` a la tabla |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **Migraciones versionadas** — cada cambio en la base de datos es un archivo numerado con funciones `up` (aplicar) y `down` (revertir). node-pg-migrate registra en la tabla `pgmigrations` qué ya se aplicó.
 
@@ -26,7 +26,7 @@ Node.js · PostgreSQL · node-pg-migrate · dotenv
 
 **dotenv** — guarda credenciales sensibles (contraseña de la DB) en un archivo `.env` que no se sube a GitHub.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 Requiere PostgreSQL instalado. Crear base de datos `migraciones_db` antes de correr.
 

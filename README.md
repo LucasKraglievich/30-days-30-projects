@@ -27,6 +27,8 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 13 | [RBAC por Roles](./day13-rbac) | Node.js · JWT · RBAC |
 | 14 | [Upload de Archivos](./day14-file-upload) | Node.js · Multer |
 | 15 | [Rate Limiting + Logs](./day15-rate-limit-logs) | Node.js · express-rate-limit · morgan |
+| 16 | [API con PostgreSQL](./day16-postgresql) | Node.js · PostgreSQL |
+| 17 | [Migraciones DB](./day17-migrations) | Node.js · node-pg-migrate |
 
 *(se va actualizando a medida que avanza el challenge)*
 

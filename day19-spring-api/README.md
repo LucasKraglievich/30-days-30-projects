@@ -8,10 +8,10 @@ Primera API REST con Java y Spring Boot — el mismo CRUD de siempre, pero con e
 - Servidor Tomcat embebido en puerto 8080
 - Datos en memoria con ArrayList
 
-## 🛠 Stack
+## Stack
 Java 21 · Spring Boot 3.5 · Maven · Apache Tomcat
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta              | Descripción                          |
 |--------|-------------------|----------------------------------------|
@@ -20,7 +20,7 @@ Java 21 · Spring Boot 3.5 · Maven · Apache Tomcat
 | GET    | `/api/tareas/{id}`| Obtiene una tarea por ID              |
 | DELETE | `/api/tareas/{id}`| Elimina una tarea                     |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **`@RestController`** — le dice a Spring que esta clase maneja requests HTTP y devuelve JSON automáticamente (equivalente a `app.get()` + `res.json()` en Express).
 
@@ -30,7 +30,7 @@ Java 21 · Spring Boot 3.5 · Maven · Apache Tomcat
 
 **`@RequestBody`** — convierte el JSON del body en un objeto Java (equivalente a `req.body` en Express).
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 Requiere Java 21 y Maven instalados.
 

@@ -29,6 +29,8 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 15 | [Rate Limiting + Logs](./day15-rate-limit-logs) | Node.js · express-rate-limit · morgan |
 | 16 | [API con PostgreSQL](./day16-postgresql) | Node.js · PostgreSQL |
 | 17 | [Migraciones DB](./day17-migrations) | Node.js · node-pg-migrate |
+| 18 | [Testing con Jest](./day18-testing) | Jest · Supertest |
+| 19 | [REST API Spring Boot](./day19-spring-api) | Java · Spring Boot |
 
 *(se va actualizando a medida que avanza el challenge)*
 

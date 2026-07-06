@@ -8,10 +8,10 @@ Tests automatizados para una API REST usando Jest y Supertest.
 - Estado limpio antes de cada test con `beforeEach`
 - Servidor exportado sin `app.listen()` para testing
 
-## 🛠 Stack
+## Stack
 Node.js · Express · Jest · Supertest
 
-## 📌 Tests incluidos
+## Tests incluidos
 
 | Endpoint | Test | Resultado esperado |
 |----------|------|-------------------|
@@ -23,7 +23,7 @@ Node.js · Express · Jest · Supertest
 | DELETE /api/tareas/:id | Elimina tarea existente | 204 |
 | DELETE /api/tareas/:id | Tarea inexistente | 404 |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **`beforeEach`** — limpia el estado antes de cada test para que sean independientes entre sí.
 
@@ -31,7 +31,7 @@ Node.js · Express · Jest · Supertest
 
 **`module.exports` sin `app.listen()`** — patrón que permite a Supertest hacer requests directamente a la app sin levantar un servidor real.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 ```bash
 npm install

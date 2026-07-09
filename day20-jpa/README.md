@@ -8,10 +8,10 @@ API REST con persistencia real usando Spring Data JPA e Hibernate.
 - Hibernate crea/actualiza la tabla al arrancar (`ddl-auto=update`)
 - Pool de conexiones con HikariCP
 
-## 🛠 Stack
+## Stack
 Java 21 · Spring Boot 3.5 · Spring Data JPA · Hibernate · PostgreSQL
 
-## 📌 Endpoints
+## Endpoints
 
 | Método | Ruta              | Descripción                          |
 |--------|-------------------|----------------------------------------|
@@ -20,7 +20,7 @@ Java 21 · Spring Boot 3.5 · Spring Data JPA · Hibernate · PostgreSQL
 | PUT    | `/api/tareas/{id}`| Actualiza una tarea                   |
 | DELETE | `/api/tareas/{id}`| Elimina una tarea                     |
 
-## 💡 Conceptos aplicados
+## Conceptos aplicados
 
 **`@Entity`** — marca una clase Java como tabla en la base de datos. Hibernate genera el SQL de creación automáticamente.
 
@@ -30,7 +30,7 @@ Java 21 · Spring Boot 3.5 · Spring Data JPA · Hibernate · PostgreSQL
 
 **`ResponseEntity`** — permite controlar el status HTTP de la respuesta (200, 204, 404) de forma explícita.
 
-## 🚀 Cómo correrlo
+## Cómo correrlo
 
 Requiere PostgreSQL corriendo con una base de datos `tareas_db`.
 

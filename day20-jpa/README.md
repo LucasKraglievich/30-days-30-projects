@@ -1,4 +1,4 @@
-# JPA + PostgreSQL con Spring Boot 🐘
+# JPA + PostgreSQL con Spring Boot 
 
 API REST con persistencia real usando Spring Data JPA e Hibernate.
 

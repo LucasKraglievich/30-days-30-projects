@@ -31,6 +31,7 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 17 | [Migraciones DB](./day17-migrations) | Node.js · node-pg-migrate |
 | 18 | [Testing con Jest](./day18-testing) | Jest · Supertest |
 | 19 | [REST API Spring Boot](./day19-spring-api) | Java · Spring Boot |
+| 20 | [JPA + PostgreSQL](./day20-jpa) | Java · Spring Boot · JPA · PostgreSQL |
 
 *(se va actualizando a medida que avanza el challenge)*
 

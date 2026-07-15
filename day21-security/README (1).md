@@ -1,43 +1,38 @@
-# JPA + PostgreSQL con Spring Boot 
+# Spring Security + JWT 
 
-API REST con persistencia real usando Spring Data JPA e Hibernate.
+Autenticación con JWT usando Spring Security — el estándar de la industria para apps Java.
 
 ## ✨ Features
-- CRUD completo con persistencia en PostgreSQL
-- Sin SQL manual — JPA genera las queries automáticamente
-- Hibernate crea/actualiza la tabla al arrancar (`ddl-auto=update`)
-- Pool de conexiones con HikariCP
+- Registro con contraseña hasheada (BCrypt)
+- Login con generación de JWT
+- Filtro JWT que intercepta cada request
+- Rutas públicas y protegidas configuradas
+- Stateless — sin sesiones del lado del servidor
 
 ## Stack
-Java 21 · Spring Boot 3.5 · Spring Data JPA · Hibernate · PostgreSQL
+Java 21 · Spring Boot · Spring Security · JJWT · PostgreSQL · JPA
 
 ## Endpoints
 
 | Método | Ruta              | Descripción                          |
 |--------|-------------------|----------------------------------------|
-| GET    | `/api/tareas`     | Lista todas las tareas                |
-| POST   | `/api/tareas`     | Crea una tarea (body: `{ "titulo": "" }`) |
-| PUT    | `/api/tareas/{id}`| Actualiza una tarea                   |
-| DELETE | `/api/tareas/{id}`| Elimina una tarea                     |
+| POST    | `/api/auth/registro`     | Crea un usuario                |
+| POST   | `/api/auth/login`     | Login, devuelve JWT |
+| GET   | `/api/auth/perfil`| Ruta protegida                   |
+
 
 ## Conceptos aplicados
 
-**`@Entity`** — marca una clase Java como tabla en la base de datos. Hibernate genera el SQL de creación automáticamente.
+@EnableWebSecurity: habilita la configuración personalizada de Spring Security.
 
-**`@GeneratedValue(strategy = GenerationType.IDENTITY)`** — equivalente a `SERIAL PRIMARY KEY` en SQL, el ID se genera solo.
+OncePerRequestFilter: filtro que se ejecuta una vez por request, intercepta el token JWT del header Authorization
 
-**`JpaRepository`** — interfaz que provee `findAll()`, `findById()`, `save()`, `deleteById()` sin escribir ningún SQL.
+SecurityFilterChain: define qué rutas son públicas (/api/auth/**) y cuáles requieren autenticación.
 
-**`ResponseEntity`** — permite controlar el status HTTP de la respuesta (200, 204, 404) de forma explícita.
+SessionCreationPolicy.STATELESS: sin sesiones del lado del servidor, cada request se autentica con el JWT.
 
 ## Cómo correrlo
 
-Requiere PostgreSQL corriendo con una base de datos `tareas_db`.
+Requiere PostgreSQL corriendo con base de datos tareas_db.
 
-```bash
-# Configurar src/main/resources/application.properties con tu contraseña
-mvn spring-boot:run
-```
-
----
-Día 20 / 30 · Challenge de proyectos · [@lucaskraglievich](https://github.com/lucaskraglievich)
+Día 21 / 30 · Challenge de proyectos · [@lucaskraglievich](https://github.com/lucaskraglievich)

@@ -1,0 +1,31 @@
+<!--
+    Agregá esto a tu pom.xml existente (día 19-21).
+    spring-boot-starter-test ya trae JUnit 5, Mockito, MockMvc y AssertJ,
+    así que probablemente ya lo tengas. Lo único que puede faltarte es H2
+    y spring-security-test (para simular usuarios autenticados en los tests).
+-->
+
+<dependencies>
+
+    <!-- Ya deberías tenerlo si usaste Spring Initializr -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Base en memoria para los tests de integración -->
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Necesario para @WithMockUser y el user() request post-processor -->
+    <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+</dependencies>

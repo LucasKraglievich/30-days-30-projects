@@ -1,4 +1,4 @@
-# Día 23 — Caching con Spring Cache + Redis 🚀
+# Día 23 — Caching con Spring Cache + Redis 
 
 ## Sobre el proyecto
 

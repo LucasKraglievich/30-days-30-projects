@@ -34,6 +34,7 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 20 | [JPA + PostgreSQL](./day20-jpa) | Java · Spring Boot · JPA · PostgreSQL |
 | 21 | [Security + JWT](./day21-security) | Java · Spring Boot · Spring Security · JWT |
 | 22 | [API GraphQL](./day22-graphql) | Java · Spring Boot · Spring for GraphQL |
+| 23 | [Caching con Redis](./day23-redis-cache) | Java · Spring Boot · Spring Cache · Redis (Memurai) |
 
 *(se va actualizando a medida que avanza el challenge)*
 

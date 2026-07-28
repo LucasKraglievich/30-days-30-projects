@@ -1,4 +1,4 @@
-# Día 25 — Documentación de API con Swagger/OpenAPI 📘
+# Día 25 — Documentación de API con Swagger/OpenAPI
 
 ## Sobre el proyecto
 

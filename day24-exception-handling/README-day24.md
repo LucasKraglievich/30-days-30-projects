@@ -1,4 +1,4 @@
-# Día 24 — Manejo Global de Excepciones + Validación ⚠️
+# Día 24 — Manejo Global de Excepciones + Validación
 
 ## Sobre el proyecto
 

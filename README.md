@@ -1,4 +1,4 @@
-# 30 Days 30 Projects 🤖
+# 30 Days 30 Projects
 
 Un proyecto nuevo cada día durante 30 días, como ejercicio de práctica y portfolio.
 
@@ -35,6 +35,8 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 21 | [Security + JWT](./day21-security) | Java · Spring Boot · Spring Security · JWT |
 | 22 | [API GraphQL](./day22-graphql) | Java · Spring Boot · Spring for GraphQL |
 | 23 | [Caching con Redis](./day23-redis-cache) | Java · Spring Boot · Spring Cache · Redis (Memurai) |
+| 24 | [Manejo de Excepciones + Validación](./day24-exception-handling) | Java · Spring Boot · Bean Validation |
+| 25 | [Documentación con Swagger](./day25-swagger-docs) | Java · Spring Boot · springdoc-openapi |
 
 *(se va actualizando a medida que avanza el challenge)*
 

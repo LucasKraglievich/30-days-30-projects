@@ -1,4 +1,4 @@
-# Día 26 — Procesamiento Asíncrono con @Async y @Scheduled ⏱️
+# Día 26 — Procesamiento Asíncrono con @Async y @Scheduled
 
 ## Sobre el proyecto
 
@@ -38,21 +38,10 @@ mvn spring-boot:run
 
 **Async:** el POST respondió exactamente en el mismo segundo que se envió
 el request, mientras el email se completó recién 3 segundos después, en
-background:
-
-```
-21:26:50 → POST /usuarios/registrar → respuesta inmediata
-21:26:53 → [EmailService] Email enviado a lucas2@test.com - hilo: task-1
-```
+background.
 
 **Scheduled:** la tarea se disparó sola, cada 10 segundos exactos, sin
 intervención:
-
-```
-21:34:38 Ejecutando limpieza automática de datos temporales...
-21:34:48 Ejecutando limpieza automática de datos temporales...
-21:34:58 Ejecutando limpieza automática de datos temporales...
-```
 
 ## Qué aprendí
 

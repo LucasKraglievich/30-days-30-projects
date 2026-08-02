@@ -56,8 +56,3 @@ el entorno.
 - Externalizar configuración sensible (puertos, profiles) vía variables
   de entorno, en vez de hardcodearla.
 
-## Próximos pasos
-
-Conectar el health check a una dependencia real (ej: PostgreSQL) para que
-`/actuator/health` refleje si la base de datos está caída, no solo si el
-proceso de Java sigue vivo.

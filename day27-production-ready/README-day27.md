@@ -1,4 +1,4 @@
-# Día 27 — Production-Readiness: Actuator, Profiles y JAR Ejecutable 🏭
+# Día 27 — Production-Readiness: Actuator, Profiles y JAR Ejecutable 
 
 ## Sobre el proyecto
 
@@ -17,27 +17,10 @@ corre solo.
 ## Qué incluye
 
 ### 1. Spring Boot Actuator
-Expone endpoints de monitoreo estándar:
-- `GET /actuator/health` — estado de la app (¿está viva? ¿la base de datos
-  responde? etc.). Es lo que usa cualquier plataforma de deploy para saber
-  si mandarle tráfico o reiniciarla.
-- `GET /actuator/info` — metadata de la app (nombre, autor), configurada
-  en `application.properties`.
 
 ### 2. Spring Profiles (dev / prod)
-- `application.properties`: config base + profile activo por default
-  (`dev`).
-- `application-prod.properties`: sobreescribe la config para producción
-  (oculta el detalle del health check por seguridad, cambia el nombre en
-  `/actuator/info`).
-- Se activa con la variable de entorno `SPRING_PROFILES_ACTIVE`, sin
-  tocar código ni recompilar.
 
 ### 3. JAR ejecutable + puerto configurable
-- `mvn clean package` genera un `.jar` que corre standalone:
-  `java -jar target/day27-production-ready-0.0.1-SNAPSHOT.jar`
-- El puerto se toma de la variable de entorno `SERVER_PORT`, con `8080`
-  como default (`server.port=${SERVER_PORT:8080}`).
 
 ## Cómo correrlo
 

@@ -37,6 +37,8 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 23 | [Caching con Redis](./day23-redis-cache) | Java · Spring Boot · Spring Cache · Redis (Memurai) |
 | 24 | [Manejo de Excepciones + Validación](./day24-exception-handling) | Java · Spring Boot · Bean Validation |
 | 25 | [Documentación con Swagger](./day25-swagger-docs) | Java · Spring Boot · springdoc-openapi |
+| 26 | [Async + Scheduled Tasks](./day26-async-scheduled) | Java · Spring Boot · @Async · @Scheduled |
+| 27 | [Production-Ready: Actuator + Profiles](./day27-production-ready) | Java · Spring Boot · Actuator · Profiles |
 
 *(se va actualizando a medida que avanza el challenge)*
 

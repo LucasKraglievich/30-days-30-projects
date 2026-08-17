@@ -1,4 +1,4 @@
-# Día 29 — CI/CD con GitHub Actions ⚙️
+# Día 29 — CI/CD con GitHub Actions
 
 ## Sobre el día
 

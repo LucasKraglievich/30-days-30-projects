@@ -1,4 +1,4 @@
-# Día 30 — Task Manager API (Capstone Final) 🏁
+# Día 30 — Task Manager API (Capstone Proyecto Final)
 
 ## Sobre el proyecto
 

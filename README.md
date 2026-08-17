@@ -39,8 +39,10 @@ Cada carpeta tiene su propio README con el detalle del proyecto, el stack usado 
 | 25 | [Documentación con Swagger](./day25-swagger-docs) | Java · Spring Boot · springdoc-openapi |
 | 26 | [Async + Scheduled Tasks](./day26-async-scheduled) | Java · Spring Boot · @Async · @Scheduled |
 | 27 | [Production-Ready: Actuator + Profiles](./day27-production-ready) | Java · Spring Boot · Actuator · Profiles |
+| 28 | [Mensajería con RabbitMQ](./day28-rabbitmq) | Java · Spring Boot · RabbitMQ (CloudAMQP) |
+| 29 | [CI/CD con GitHub Actions](./day29-cicd) | GitHub Actions · Maven |
+| 30 | [Task Manager API (Capstone)](./day30-capstone) | Java · Spring Boot · JWT · JPA · Swagger · Actuator |
 
-*(se va actualizando a medida que avanza el challenge)*
 
 ## 🔗 Links
 

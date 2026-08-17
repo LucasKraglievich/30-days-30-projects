@@ -1,4 +1,4 @@
-# Día 28 — Mensajería con RabbitMQ 📨
+# Día 28 — Mensajería con RabbitMQ
 
 ## Sobre el proyecto
 
@@ -73,8 +73,3 @@ que ninguno sepa que el otro existe.
 - Cuándo tiene sentido usar un servicio gestionado (CloudAMQP) en vez de
   perder tiempo de desarrollo en infraestructura local — una decisión
   pragmática, no solo técnica.
-
-## Próximos pasos
-
-Agregar un *dead-letter queue* para mensajes que fallan repetidamente al
-procesarse, y reintentos con backoff.
